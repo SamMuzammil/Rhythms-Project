@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Welcome To Rhythms</h2>
+            <p>Please Use Your Managers ID and Passwords</p>
+        </div>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <i class="fa fa-user"></i>
+                <input type="text" id="managerID" name="managerID" placeholder="Manager ID" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fa fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="options">
+              
+              <button type="button" onclick="changePassword()">Change Password</button>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
